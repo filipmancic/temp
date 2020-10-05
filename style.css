@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Lora';
+}
+html
+{
+    overflow-x: hidden !important;
+    scroll-behavior:smooth;
+}
+.bg-black
+{
+    background:rgba(0,0,0,1);
+}
+.row
+{
+    margin: 0 !important;
+}
+body
+{
+
+}
+@keyframes flip
+{
+    0%{transform: rotateY(90deg);opacity:0;}
+    60%{transform: rotateY(-10deg);}
+    100%{transform: rotateY(0deg);opacity:1;}
+}
+.navbar
+{
+    padding:0!important;
+}
+.flip
+{
+    animation-fill-mode: backwards;
+    animation-name: flip;
+    animation-duration: 2s;
+}
+.nav li a
+{
+    text-decoration: none!important;
+    color:white !important;
+    font-size: 19px;
+}
+.nav li
+{
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-item
+{
+    margin:10px 0px;
+}
+.nav-dugme
+{
+    padding-top:30px;
+}
+.underline::after
+{
+    content: ' ';
+    display:block;
+    width: 0;
+    opacity:0;
+    height:2px;
+    background:#caa211;
+    transition:all .3s;
+
+}
+.underline:hover::after{
+    opacity:1;
+    width:100%;
+    transition: all .3s;
+}
+.slajdshow
+{
+
+    height: 100vh;
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition:all 1s ease-in-out;
+
+    animation-name:slajdsou;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration:20s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slajdsou{
+    0%{
+        background-size: 100%;
+        background-image:url("img/img2.jpg");
+    }
+    20%{
+        background-size: 120%;
+        background-image:url("img/img3.jpg");
+    }
+    40%{
+        background-size: 100%;
+        background-image:url("img/img4.jpg");
+    }
+    60%{
+        background-size: 120%;
+        background-image:url("img/img5.jpg");
+    }
+    80%{
+        background-size: 100%;
+        background-image:url("img/img6.jpg");
+    }
+    100%{
+        background-size: 120%;
+        background-image:url("img/img4.jpg");
+    }
+}
+.jumbo1
+{
+    font-family: 'Great Vibes';
+    font-size: 78px;
+    text-align: center;
+    margin-top: 40vh;
+    color:white;
+    text-shadow: 0px 1px 4px #000000;
+}
+.jumbo2
+{
+    font-family: 'Great Vibes';
+    font-size: 50px;
+    text-align: center;
+    color:white;
+    text-shadow: 0px 1px 4px #000000;
+    padding-bottom: 30px;
+}
+.tint
+{
+    height: 100vh;
+    color: rgba(0,0,0,0.5);
+}
+.welcome
+{
+    font-family: 'Great Vibes';
+    font-size: 62px;
+    text-align: center;
+    margin-top: 4vh;
+    color:#caa211;
+}
+.welcome-2
+ {
+    font-family: 'Great Vibes';
+     font-size: 48px;
+     text-align: center;
+     margin-top: 2vh;
+     color:black;
+ }
+.desc
+{
+    max-width: 90%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1vh;
+}
+.desc2
+{
+    max-width: 80%;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1vh;
+    color: white;
+}
+.welcome-3
+{
+    font-family: 'Great Vibes';
+    font-size: 48px;
+    text-align: center;
+    padding-top: 5vh;
+    color:#caa211;
+}
+.food-slika
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+.myButton {
+    box-shadow: 0px 0px 10px 0px #1f1f1f;
+    border-radius:16px;
+    cursor:pointer;
+    background: rgba(0,0,0,0.6);
+    font-family: 'Dancing Script';
+    color:#ffffff !important;
+    font-size:28px;
+    padding:5px 30px;
+    text-decoration:none !important;
+    transition: all 0.3s ease-in-out;
+}
+.myButton:hover
+{
+    background: rgba(0,0,0,1);
+}
+#demo
+{
+    margin:40px;
+}
+.carousel-item img
+{
+    width: 80%;
+}
+.futer
+{
+    background: #ededed;
+    padding-bottom: 45px;
+}
+.fut1
+{
+    padding-bottom: 15px;
+    font-family: 'Lora';
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+.minifut
+{
+    font-size: 20px;
+    margin:5px;
+}
+.ikonica:hover
+{
+    color:#caa211;
+}
